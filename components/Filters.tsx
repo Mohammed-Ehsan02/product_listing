@@ -2,7 +2,7 @@
 import { Dispatch, SetStateAction } from "react";
 
 type FiltersProps = {
-  setFilters: Dispatch<SetStateAction<{ price: string; bedrooms: string }>>;
+  setFilters: Dispatch<SetStateAction<{ price?: number; bedrooms?: number }>>;
 };
 
 export default function Filters({ setFilters }: FiltersProps) {
@@ -12,11 +12,17 @@ export default function Filters({ setFilters }: FiltersProps) {
         type="number"
         placeholder="Max Price"
         className="p-2 border rounded"
-        onChange={(e) => setFilters((prev) => ({ ...prev, price: e.target.value }))}
+        onChange={(e) => {
+          const value = e.target.value ? parseInt(e.target.value, 10) : undefined;
+          setFilters((prev) => ({ ...prev, price: value }));
+        }}
       />
       <select
         className="p-2 border rounded"
-        onChange={(e) => setFilters((prev) => ({ ...prev, bedrooms: e.target.value }))}
+        onChange={(e) => {
+          const value = e.target.value ? parseInt(e.target.value, 10) : undefined;
+          setFilters((prev) => ({ ...prev, bedrooms: value }));
+        }}
       >
         <option value="">Bedrooms</option>
         <option value="1">1</option>

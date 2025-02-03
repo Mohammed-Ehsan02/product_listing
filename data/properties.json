@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "image": "/images/house1.jpg",
+      "address": "123 Ocean Drive, Miami, FL",
+      "size": 2500,
+      "bedrooms": 3,
+      "price": 850000,
+      "timestamp": "2024-02-01T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "image": "/images/house2.jpg",
+      "address": "456 Maple Street, Austin, TX",
+      "size": 1800,
+      "bedrooms": 2,
+      "price": 450000,
+      "timestamp": "2024-01-25T09:30:00Z"
+    },
+    {
+      "id": 3,
+      "image": "/images/house3.jpg",
+      "address": "789 Sunset Blvd, Los Angeles, CA",
+      "size": 3200,
+      "bedrooms": 4,
+      "price": 1200000,
+      "timestamp": "2024-01-28T14:45:00Z"
+    },
+    {
+      "id": 4,
+      "image": "/images/house4.jpg",
+      "address": "101 Pine Ave, San Francisco, CA",
+      "size": 2800,
+      "bedrooms": 3,
+      "price": 990000,
+      "timestamp": "2024-01-20T16:20:00Z"
+    },
+    {
+      "id": 5,
+      "image": "/images/house5.jpg",
+      "address": "202 Birch Lane, Denver, CO",
+      "size": 1500,
+      "bedrooms": 2,
+      "price": 350000,
+      "timestamp": "2024-02-02T11:15:00Z"
+    },
+    {
+      "id": 6,
+      "image": "/images/house6.jpg",
+      "address": "303 Oak Street, Chicago, IL",
+      "size": 2200,
+      "bedrooms": 3,
+      "price": 700000,
+      "timestamp": "2024-01-18T08:10:00Z"
+    },
+    {
+      "id": 7,
+      "image": "/images/house7.jpg",
+      "address": "404 Cedar Road, Portland, OR",
+      "size": 2700,
+      "bedrooms": 4,
+      "price": 980000,
+      "timestamp": "2024-01-30T10:05:00Z"
+    },
+    {
+      "id": 8,
+      "image": "/images/house8.jpg",
+      "address": "505 Redwood Ave, Seattle, WA",
+      "size": 2000,
+      "bedrooms": 3,
+      "price": 780000,
+      "timestamp": "2024-02-03T13:55:00Z"
+    },
+    {
+      "id": 9,
+      "image": "/images/house9.jpg",
+      "address": "606 Willow Lane, Nashville, TN",
+      "size": 1600,
+      "bedrooms": 2,
+      "price": 400000,
+      "timestamp": "2024-02-01T15:25:00Z"
+    },
+    {
+      "id": 10,
+      "image": "/images/house10.jpg",
+      "address": "707 Spruce Blvd, Boston, MA",
+      "size": 3100,
+      "bedrooms": 5,
+      "price": 1300000,
+      "timestamp": "2024-01-22T17:40:00Z"
+    }
+  ]
+  

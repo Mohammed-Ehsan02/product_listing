@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import PropertyCard from "./PropertyCard"
 import { useSearchParams } from "next/navigation"
 
@@ -14,7 +14,7 @@ interface Property {
   dateAdded: string
 }
 
-export default function PropertyList() {
+const PropertyList = () => {
   const [properties, setProperties] = useState<Property[]>([])
   const searchParams = useSearchParams()
 
@@ -37,3 +37,10 @@ export default function PropertyList() {
   )
 }
 
+export default function PropertyListWithSuspense() {
+  return (
+    <Suspense fallback={<div>Loading properties...</div>}>
+      <PropertyList />
+    </Suspense>
+  )
+}

@@ -23,7 +23,8 @@ This project is a **real estate property listing page** built with **Next.js 13 
   - **Alphabetical Order** (Address A-Z)
 
 ### 🔎 **Search Functionality**
-
+- **Live search bar** allows users to search for properties by **address**.
+- **Search integrates with filters & sorting**, ensuring a seamless experience.
 
 ### 📱 **Responsive & Mobile-Friendly**
 - **Adaptive layout** for desktop, tablet, and mobile.
@@ -33,8 +34,7 @@ This project is a **real estate property listing page** built with **Next.js 13 
 - **Next.js API routes** fetch property data dynamically.
 
 ### ⚡ **Extra Features Added**
-- Users can **search properties by address**.
-- Works seamlessly with **filters & sorting**.
+- **Search & filters work together** dynamically.
 - **Optimized API calls** for better performance.
 - **Dark Mode Ready** via `next-themes` (future expansion).
 - **Code follows best practices** – modular, reusable components.
@@ -59,6 +59,21 @@ This project is a **real estate property listing page** built with **Next.js 13 
    ```
 4. **Open in Browser**
    - Navigate to **[http://localhost:3000](http://localhost:3000)**.
+
+### 🌍 **Environment Variables (Future Improvement)**
+Currently, the API URL is **hardcoded** in ``` /app/property/[id]/page.tsx ```:
+```ts
+const res = await fetch(`http://localhost:3000/api/properties`); // Hardcoded for ease of usage
+```
+To make this dynamic, update this line to:
+```ts
+const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/properties`);
+```
+Then, create a `.env.local` file and add:
+```env
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
+```
+For production, set the appropriate **API base URL**.
 
 ---
 

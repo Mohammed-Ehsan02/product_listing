@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function PropertyPage({ params }: { params: { id: string } }) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/properties`);
+  const res = await fetch(`http://localhost:3000/api/properties`);
   const properties = await res.json();
 
   const property = properties.find((p: any) => p.id === Number.parseInt(params.id));

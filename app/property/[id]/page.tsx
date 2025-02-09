@@ -1,12 +1,14 @@
-import Image from "next/image"
-import Link from "next/link"
-import properties from "@/data/properties.json"
+import Image from "next/image";
+import Link from "next/link";
 
-export default function PropertyPage({ params }: { params: { id: string } }) {
-  const property = properties.find((p) => p.id === Number.parseInt(params.id))
+export default async function PropertyPage({ params }: { params: { id: string } }) {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/properties`);
+  const properties = await res.json();
+
+  const property = properties.find((p: any) => p.id === Number.parseInt(params.id));
 
   if (!property) {
-    return <div>Property not found</div>
+    return <div className="container mx-auto px-4 py-8 text-red-600 font-bold">Property not found</div>;
   }
 
   return (
@@ -32,6 +34,5 @@ export default function PropertyPage({ params }: { params: { id: string } }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

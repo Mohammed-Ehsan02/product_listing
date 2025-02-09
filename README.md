@@ -30,9 +30,6 @@ This project is a **real estate property listing page** built with **Next.js 13 
 - **Grid-based design** that adjusts to different screen sizes.
 
 ### 🎨 **Modern UI/UX Enhancements**
-- **Company branding** centered at the top.
-- **Catchy tagline** for engagement.
-- **Expandable filter section** for a **cleaner UI**.
 - **Next.js API routes** fetch property data dynamically.
 
 ### ⚡ **Extra Features Added**
